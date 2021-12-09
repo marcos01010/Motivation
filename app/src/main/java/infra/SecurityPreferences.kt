@@ -9,7 +9,7 @@ class SecurityPreferences(val context: Context) {
     fun storeString(key: String, value: String){
         this.mSharedPreferences.edit().putString(key, value).apply()
     }
-    fun getStoredString (key: String): String {
+    fun getString (key: String): String {
         return this.mSharedPreferences.getString(key,"") ?: ""
     }
 }
